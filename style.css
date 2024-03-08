@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#fffff ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#po{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    position: absolute;
+    left: 124px;
+    top:40px;
+    font-size: 20px;
+
+}
+#tin{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  
+
+}
+#tin:hover{
+    color:#7774ff;
+
+}
+#ton{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  
+
+}
+#ton:hover{
+    color:#7774ff;
+
+}
+
+#dam{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  
+
+}
+#dam:hover{
+    color:#7774ff;
+
+}
+#d{
+    border: solid #7774ff;
+    border-radius: 10px;
+    padding: 7px ;
+    background-color: #7774ff;
+    color: white;
+}
+#d{
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  
+
+}
+#d:hover{
+    border:solid #2d29f8;
+    background-color: #2d29f8;
+    box-shadow: 0 0px 12px 0 black;
+    transform: translateY(-10px);
+
+}
+#go{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-left: 2%;
+    left: 70px;
+    align-items: center;
+    border-bottom: solid 1px grey;
+}
+
+#me{
+    font-size: 25px;
+}
+#dada{
+    font-size: small;
+    position: absolute;
+}
+#kaka{
+    position: absolute;
+    border: solid #7774ff 1px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    top: 100px;
+    margin-left: 20px;
+    color: #7774ff;
+    font-family:sans-serif;
+    top: 18%;
+}
+#kaka{
+    font-weight: 1000;
+    position: absolute;
+    color: #7774ff;
+    background-color: transparent;
+    animation-name: get;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes get {
+    0%{
+        left: -80%;
+        top: -20%:
+    }
+    100%{
+        left: 0%;
+        top: 18%;
+    }
+}
+#head{
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    margin: 5%;
+    width: 45%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 3px 3px  black;
+    animation: fadeIn 1s ease-in-out 
+}
+span{
+    color: #7774ff;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity:  1;
+        
+    }
+    
+}
+#push{
+    height:300px;
+    width: 250px;
+    object-fit: cover;
+    border: solid;
+    border-radius:15%;
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    
+}
+
+
+.workout-button {
+    background-color: rgba(255, 255, 255, 0.418);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .workout-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .workout-button:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
