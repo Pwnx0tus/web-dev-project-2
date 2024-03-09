@@ -6,6 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 html,body{
+    *::selection{
+        color: black;
+        background-color: #7774ff;
+    }
     height: 100%;
     width: 100%;
 }
@@ -173,6 +177,7 @@ span{
     animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
+    border: solid white 6px;
 }
 @keyframes card {
     0%{
@@ -186,7 +191,6 @@ span{
         opacity: 1;
     }
 }
-
 #card button{
     color: black;
     background-color: rgba(255, 255, 255, 0.288);
@@ -204,4 +208,58 @@ span{
 }
 #card button:hover{
     background-color: white;
+}
+#lhed{
+  text-transform: uppercase;
+  position: absolute;
+  top: 6%;
+  left: 73%;
+  font-size: 17px;
+  border-right: solid solid;
+  margin-right: 76px;
+  border-top: solid white;
+  border-bottom: solid white;
+  border-right-style: solid white dashed;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 6px 9px 0px #7774ff;
+  padding: 13px;
+  animation-name: lhed;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes lhed {
+    0%{
+        top: 0;
+        right: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 6%;
+        right: 0%;
+        opacity: 1;
+    }
+
+}
+.rhed h6{
+  font-size: 12px;
+  position: absolute;
+  top: 428px;
+  left: 227px;
+  color: gray;
+  width: 216px;
+  animation: fadeIn 1s ease-in;
+  animation-delay: 3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
